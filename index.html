@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link rel="stylesheet" href="styles/index.css">
+    </head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <a href="index.html">Пошук</a>
+            <a href="img_search.html">Зображення</a>
+            <a href="adv_search.html">Розширений пошук</a>
+        </div>
+        <div class="logo">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+        </div>
+        <form action="https://www.google.com/search" method="get">
+            <input type="text" name="q" placeholder="Пошук в Google">
+            <input type="submit" value="Пошук">
+            <button onclick="redirectToFirstSearchResult()" style="background-color: #4285f4;
+            color: #fff;
+            font-size: 16px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px 20px 20px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;">Мені пощастить</button>
+        </form>
+    </div>
+    <script>
+        function redirectToFirstSearchResult() {
+            var input = document.getElementsByName("q")[0];
+            var query = input.value;
+            var url = "https://www.google.com/search?q=" + encodeURIComponent(query) + "&start=0";
+            window.location.replace(url);
+        }
+    </script>    
+</body>
+</html>

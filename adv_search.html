@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Advanced Search</title>
+        <link rel="stylesheet" href="styles/index.css">
+    </head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <a href="index.html">Пошук</a>
+            <a href="img_search.html">Зображення</a>
+            <a href="adv_search.html">Розширений пошук</a>
+        </div>
+        <div class="logo">
+            <img src="https://png.pngtree.com/element_our/20190602/ourlarge/pngtree-cartoon-letter-magnifying-glass-illustration-image_1402322.jpg" alt="Google Logo">
+        </div>
+        <form action="https://www.google.com/search" method="GET" id="advanced-search-form" style="flex-direction: column;">
+            <div class="form-group">
+              <label for="all-words-input">Знайти сторінки із… «усіма цими словами»:</label><br>
+              <input type="text" id="all-words-input" name="as_q" placeholder="Усі ці слова">
+            </div><br>
+            <div class="form-group">
+              <label for="exact-phrase-input">Знайти сторінки з… «саме цим словом або фразою»:</label><br>
+              <input type="text" id="exact-phrase-input" name="as_epq" placeholder="Це точно">
+            </div><br>
+            <div class="form-group">
+              <label for="any-words-input">Знайти сторінки з… «будь-яким із цих слів»:</label><br>
+              <input type="text" id="any-words-input" name="as_oq" placeholder="Будь-які з цих слів">
+            </div><br>
+            <div class="form-group">
+              <label for="none-words-input">Знайти сторінки з… «жодне з цих слів»:</label><br>
+              <input type="text" id="none-words-input" name="as_eq" placeholder="Ні одного з цих слів">
+            </div><br>
+            <div class="btn-group">
+              <input type="submit" value="Розширений пошук" class="btn">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

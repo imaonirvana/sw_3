@@ -1,0 +1,86 @@
+  body {
+    margin: 0;
+    padding: 0;
+    background-image: url(https://images.pexels.com/photos/933054/pexels-photo-933054.jpeg?cs=srgb&dl=pexels-joyston-judah-933054.jpg&fm=jpg);
+    background-size: cover;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Стилі для основного блоку */
+  .container {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-top: 50px;
+  }
+  
+  /* Стилі для логотипу Google */
+  .logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .logo img {
+    height: 70px;
+    width: auto;
+  }
+  
+  /* Стилі для форми пошуку */
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  input[type="text"] {
+    width: 500px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 20px 0px 0px 20px;
+  }
+  
+  input[type="submit"] {
+    background-color: #4285f4;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0px 20px 20px 0px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #357ae8;
+  }
+  /* Стилі для кнопок переходу */
+  .navigation {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    margin-right: 5px;
+  }
+  
+  .navigation a {
+    background-color: #f2f2f2;
+    color: #444;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease-in-out;
+    margin-left: 5px;
+  }
+  
+  .navigation a:hover {
+    background-color: #e2e2e2;
+  }
